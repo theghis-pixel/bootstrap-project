@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Restaurant Theski</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <style>
+    /* HERO SECTION */
+    .hero {
+      background: url("images/5.jpg") center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    footer i {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">Mon Restaurant</a>
+
+    <!-- Bouton mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Accueil</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">À propos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="overlay">
+    <h1>Bienvenue au Restaurant</h1>
+    <p>Des plats délicieux préparés avec amour</p>
+    <a href="#menu" class="btn btn-warning">Voir le menu</a>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section id="menu" class="container py-5">
+
+  <h2 class="text-center mb-4">Menu</h2>
+
+  <div class="row g-4">
+
+    <!-- Plat 1 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/1.jpg" class="card-img-top" alt="Boeuf Sauce Rouge">
+
+        <div class="card-body">
+          <h5 class="card-title">Boeuf Sauce Rouge</h5>
+          <p class="card-text">Boeuf succulent préparé avec des épices savoureuses.</p>
+          <p><strong>35 000 FCFA</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plat 2 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/2.jpg" class="card-img-top" alt="Burger">
+
+        <div class="card-body">
+          <h5 class="card-title">Burger</h5>
+          <p class="card-text">Burger juteux et gourmand avec des ingrédients frais.</p>
+          <p><strong>15 000 FCFA</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plat 3 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/3.jpg" class="card-img-top" alt="Pâtes">
+
+        <div class="card-body">
+          <h5 class="card-title">Pâtes</h5>
+          <p class="card-text">Pâtes maison accompagnées d’une sauce fraîche.</p>
+          <p><strong>15 000 FCFA</strong></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="container py-5">
+
+  <div class="row align-items-center">
+
+    <div class="col-md-6">
+      <img src="images/5.jpg" class="img-fluid rounded" alt="Restaurant">
+    </div>
+
+    <div class="col-md-6">
+      <h2>À propos de nous</h2>
+      <p>
+        Notre restaurant propose des plats faits maison avec des ingrédients frais
+        et de qualité. Nous mettons l’accent sur le goût, le service et la satisfaction
+        de nos clients pour offrir une expérience culinaire exceptionnelle.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="container py-5">
+
+  <h2 class="text-center mb-4">Contact</h2>
+
+  <form>
+
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Nom">
+    </div>
+
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Email">
+    </div>
+
+    <div class="mb-3">
+      <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-dark">Envoyer</button>
+
+  </form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-white text-center p-4">
+  <p>© 2026 Mon Restaurant - Tous droits réservés</p>
+
+  <div>
+    <i class="bi bi-facebook mx-2"></i>
+    <i class="bi bi-instagram mx-2"></i>
+    <i class="bi bi-twitter-x mx-2"></i>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
