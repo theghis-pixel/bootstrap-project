@@ -71,4 +71,4 @@ dans un navigateur.
 
 ##  Auteur
 
-Projet réalisé avec Bootstrap dans le cadre d’un devoir.
+Projet réalisé par theghis avec Bootstrap dans le cadre d’un devoir.
